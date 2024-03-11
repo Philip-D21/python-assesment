@@ -3,21 +3,25 @@ import re
 
 # 1. Create a text file with your full name
 with open('philip_daudu.txt', 'w') as file:
-    file.write('Philip Daudu')
+    file.write('Philip Ayomide Daudu')
 
-# 2. Read the text file and extract first name, surname, and middle name
+# 2. Read the text file and extract first name, middle name, and last name
 current_directory = os.getcwd()
 file_path = os.path.join(current_directory, 'philip_daudu.txt')
 
 with open(file_path, 'r') as file:
     full_name = file.read()
 
-first_name, last_name = full_name.split()
-surname = full_name[len(first_name):-len(last_name)].strip()
+names = full_name.split()
+first_name = names[0]
+middle_name = names[1] if len(names) == 3 else ""
+last_name = names[-1]
 
 print("1. First Name:", first_name)
-print("   Surname:", surname)
+print("   Middle Name:", middle_name)
+print("   Surname:", last_name)
 print("   File Path:", file_path)
+
 
 # 3. Extract baby names from HTML files using Regex
 html_content = """
