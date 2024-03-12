@@ -78,3 +78,6 @@ if result != -1:
     print("\n4. Target", target_number, "found at index", result)
 else:
     print("\n4. Target", target_number, "not found.")
+
+
+# https://www.youtube.com/watch?v=wYEk0y8LYfg&t=0s
