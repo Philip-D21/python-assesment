@@ -6,9 +6,13 @@ user = "postgres"
 password = "admin"
 port = '5432'
 
+
+
 connection= None
 
 try:
+
+    
     connection = psycopg2.connect(
         host=host,
         database=database,

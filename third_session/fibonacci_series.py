@@ -5,6 +5,6 @@ def fibonacci(n):
     return fib_series[:n]
 
 # test the function
-n = 10
+n = 100
 fib_series = fibonacci(n)
 print(fib_series)
