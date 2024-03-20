@@ -29,6 +29,7 @@ squared_numbers_dict = {x: x**2 for x in range(5)}
 # Checking if a key is in the dictionary
 is_age_key_present = "age" in student
 
+
 # Length of a dictionary
 num_keys = len(student)
 
