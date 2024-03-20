@@ -33,5 +33,7 @@ is_age_key_present = "age" in student
 # Length of a dictionary
 num_keys = len(student)
 
+
+
 # Printing the final dictionary
 print("Updated student dictionary:", student)

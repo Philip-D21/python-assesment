@@ -10,7 +10,7 @@ connection= None
 
 try:
 
-    
+
     connection = psycopg2.connect(
         host=host,
         database=database,
@@ -22,6 +22,8 @@ try:
     # Create a cursor object to interact with the database
     cursor = connection.cursor()
 
+
+
     # SQL statement to create a table named 'users'
     create_table_query = '''
        CREATE TABLE IF NOT EXISTS users (
@@ -32,6 +34,7 @@ try:
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
        )
     '''
+
 
     # SQL statement to insert values into 'users' table
     insert_table_values = '''
@@ -45,6 +48,7 @@ try:
     WHERE username = 'PAUL'
     '''
 
+
     # SQL statement to select all users
     select_users_query = '''
     SELECT * FROM users
@@ -54,6 +58,7 @@ try:
     delete_user_query = '''
     DELETE FROM users WHERE username = 'PAUL'
     '''
+
 
     # Execute a simple query to create the table
     cursor.execute(create_table_query)
